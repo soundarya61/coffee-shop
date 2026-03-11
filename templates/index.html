@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Website</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Project JS -->
+    <script src="{{ url_for('static', filename='formjs.js') }}"></script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-mug-hot logo-icon"></i>
+                <div class="logo-text" style="font-size:26px;">Brew <span>Heaven</span></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#products">Menu</a></li>
+                    <li><a href="#Location">Location & contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-buttons">
+                <a href="/feedback">
+                    <button class="btn btn-primary">Feedback</button></a>
+                <!-- <a href="#products" class="btn btn-primary">Our Blends</a> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- hero section-->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-subtitle">
+                    <i class="fa-solid fa-seedling"></i>
+                    Ethically sourced Beans
+                </div>
+                <h1 class="hero-title">Artism coffee<br><span>Crafed with Passion</span></h1>
+                <p class="hero-text">
+                    Discover single-orgin Coffeee roasted to perfection in small batches for exceptional flavor.
+                    Experience the journey from bean to cup with our master roaster.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Explore our Blends</a>
+                    <a href="#Location" class="btn btn-secondary">Visit Our Cafe</a>
+                </div>
+            </div>
+
+            <!-- IMAGE FIXED -->
+            <img src="{{ url_for('static', filename='project-img1.jpeg') }}" alt="" width="370px">
+        </div>
+    </section>
+
+    <!-- products section-->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Our Section</div>
+                <h2 class="section-title">Signature Coffee Blends</h2>
+                <p class="section-desc">Each batch is carefully roasted to highlight the unique characteristics of the beans.</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="products-card">
+                    <div class="products-img">
+                        <!-- IMAGE FIXED -->
+                        <img src="{{ url_for('static', filename='project-img2.jpeg') }}" alt="Ethiopian Virgacheffe">
+                    </div>
+                    <div class="products-info">
+                        <div class="products-tag">BESTSELLER</div>
+                        <h3 class="products-title">Caramel Macchiato</h3>
+                        <p class="products-desc">
+                            Floral notes with bright circus acidity and a tea-like body.Light roast.
+                        </p>
+                        <div class="product-footer">
+                            <div class="products-price">$99.00</div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-card">
+                    <div class="products-img">
+                        <!-- IMAGE FIXED -->
+                        <img src="{{ url_for('static', filename='project-img3.jpeg') }}" alt="colombian superemo">
+                    </div>
+                    <div class="products-info">
+                        <h3 class="products-title">Cappuccino</h3>
+                        <p class="products-desc">
+                            Rich caramel sweetness with nutty undertones and alanced acidity.Medium Roast.
+                        </p>
+                        <div class="products-footer">
+                            <div class="products-price">$89.99</div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-card">
+                    <div class="products-img">
+                        <!-- IMAGE FIXED -->
+                        <img src="{{ url_for('static', filename='project-img4.jpeg') }}" alt="Dark roasted Espresso">
+                    </div>
+                    <div class="products-info">
+                        <div class="products-tag">New</div>
+                        <h3 class="products-title">Dark roasted Espresso</h3>
+                        <p class="products-desc">
+                            Bold and intense with dark chololate notes and a creamy mouthfeel.Dark roast.
+                        </p>
+                        <div class="products-footer">
+                            <div class="products-price">$99.00</div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <section class="#Location" id="Location">
+            <section class="#Contact" id="Contact">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-column">
+                            <h3>About BrewHeaven</h3>
+                            <p style="color: var(--coffee-accent); margin-bottom: 20px;">
+                                Artisn coffee roasters dedicated to quality,sustainbility. and the perfect cup.
+                            </p>
+                            <div class="social-links">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="footer-column">
+                            <h3>Quick Links</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Coffee Blends</a></li>
+                                <li><a href="#">Brewing Guides</a></li>
+                                <li><a href="#">Sustainability</a></li>
+                                <li><a href="#">Wholesale</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h3>Contact Us</h3>
+                            <ul class="footer-links">
+                                <li><i class="fa-solid fa-location-dot"></i>123 Coffee Lane,Chennai,OR</li>
+                                <li><i class="fa-solid fa-phone"></i>(555)123-4567</li>
+                                <li><i class="fa-regular fa-envelope"></i>hello@brewheaven</li>
+                                <li><i class="fa-solid fa-clock"></i>Mon-sat:7am-10pm</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="copy-right">
+                        &copy;2026 BrewHeaven coffee Roasters.All rights reserved.
+                    </div>
+                </div>
+            </section>
+        </section>
+    </footer>
+</body>
+</html>

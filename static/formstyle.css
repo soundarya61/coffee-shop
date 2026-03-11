@@ -1,0 +1,128 @@
+/* body {
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(121,32,153,1) 86%);
+    background-attachment: fixed;
+    margin: 0;
+    font-family: poppins, sans-serif;
+}
+
+#form {
+    width: 400px;
+    margin: 20vh auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #792099;
+}
+
+#form button {
+    background-color: #792099;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid rgb(34,193,195);
+}
+
+.input-group input:focus {
+    outline: none;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.input-group.success input {
+    border-color: #0cc477;
+}
+
+.input-group.error input {
+    border-color: rgb(206,67,67);
+} */
+  :root{
+    --coffee-dark:#3e2723;
+    --coffee-medium:#6f4e37;
+    --coffee-light:#c4a484;
+    --coffee-accent:#d2b48c;
+    --coffee-cream:#f5f5dc;
+    --coffee-gold:#d4af37;
+    --text-dark:#2C2416;
+    --text-light:#f3f3f3;
+}
+body{
+    background:var(--coffee-medium);
+    /* background: linear-gradient(0deg, rgba(34,193,195,1)0%, rgba(121,32,153,1)86%); */
+    /* background-image: url(project-img3.jpeg); */
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+#form{
+    width: 400px;
+    margin: 20vh auto 0 auto; 
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 30px;
+}
+h1{
+    text-align: center;
+    color:var(--coffee-gold);
+}
+#form button{
+    background-color: var(--coffee-dark);
+    color: white;
+    border: 1px solid var(--coffee-gold);
+    padding: 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.input-group input{
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid var(--coffee-dark);
+
+}
+.input-group input:focus{
+    outline: 0;
+}
+.error{
+    color: rgb(247,18,18);
+    font-size: 16px;
+    margin-top: 5px;
+}
+.input-group.success input{
+    border-color: #0cc477;
+}
+.input-group.error input{
+    border-color: rgb(206,67,67);
+}
